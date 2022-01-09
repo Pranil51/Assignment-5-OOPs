@@ -1,0 +1,13 @@
+import ast
+class Power:
+    def __init__(self, base, power):
+        self.x=base
+        self.n=power
+    def Display(self):
+        if (self.x)==0 and self.n<0:
+            p=0
+        else:
+            p=(self.x)**(self.n)
+        return "%s to the power of %s is %s"%(self.x, self.n,p)
+a=Power(ast.literal_eval(input("Enter base value x: ")),ast.literal_eval(input("Enter Exponent n: ")))
+a.Display()
