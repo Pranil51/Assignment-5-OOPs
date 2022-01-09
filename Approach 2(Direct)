@@ -1,0 +1,12 @@
+import ast
+class Power:
+    x="base"
+    n="expo"
+    @classmethod
+    def cls(cls, x, n):
+        if (x)==0 and n<0:
+            p=0
+        else:
+            p=(x)**(n)
+        return "%s to the power of %s is %s"%(x,n,p)
+Power.cls(ast.literal_eval(input("Enter Base value x: ")),ast.literal_eval(input("Enter Exponent n: ")))
